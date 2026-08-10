@@ -33,8 +33,8 @@ export default async function PropertyPage({
   }
 
   return (
-    <main className="min-h-screen bg-white text-neutral-950">
-      <section className="mx-auto max-w-7xl px-6 pb-20 pt-32 lg:px-8">
+    <main>
+      <section className="mx-auto max-w-7xl px-6 py-10 lg:px-8">
         <Link
           href="/properties"
           className="inline-flex items-center gap-2 text-sm text-neutral-500 transition hover:text-neutral-950"
@@ -228,17 +228,17 @@ export default async function PropertyPage({
             </h2>
 
             <p className="mt-3 text-sm leading-7 text-neutral-500">
-              Send an enquiry and the Oakshiffs team can provide
-              availability, viewing information and additional
-              property details.
+              Send an enquiry and the Oakshiffs team can
+              provide availability, viewing information and
+              additional property details.
             </p>
 
             <div className="mt-8">
-             <PropertyEnquiry
-  propertyId={property.id}
-  propertyTitle={property.title}
-  city={property.city}
-/>
+              <PropertyEnquiry
+                propertyId={property.id}
+                propertyTitle={property.title}
+                city={property.city}
+              />
             </div>
           </aside>
         </div>
